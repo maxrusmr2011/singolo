@@ -74,27 +74,33 @@ body {
   padding: 4px 0 0 0;
   margin: 0;
   list-style: none;
+  
 }
-
+.navigation span {
+  color: #555555;
+  transform: translateY(-3px);
+}
 .navigation--item {
   display: inline-block;
 }
 
 .navigation--link {
-  color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-}
+  color: #ffffff;
 
-.navigation--link:hover {
-  text-decoration: underline;
 }
-
 .navigation--link.link-active {
   color: #f06c64;
 }
+.navigation--link:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+
 
 .header--bottom {
   height: 6px;
@@ -114,6 +120,7 @@ body {
 
 .slider--chev:hover {
   cursor: pointer;
+  transform: scale(1.5, 1.5);
 }
 
 .slider--phone {
