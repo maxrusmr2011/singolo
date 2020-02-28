@@ -222,28 +222,32 @@ body {
 }
 
 .person1 .person__photo {
-  background: url('./assets/images/photo/photo1.png')
+  background: url('./assets/images/photo/photo1.png') no-repeat;
 }
 
 .person2 .person__photo {
-  background: url('./assets/images/photo/photo2.png')
+  background: url('./assets/images/photo/photo2.png') no-repeat;
 }
 
 .person3 .person__photo {
-  background: url('./assets/images/photo/photo3.png')
+  background: url('./assets/images/photo/photo3.png') no-repeat;
 }
 
 .person__title {
-  margin-top: 17px;
+  width: 300px;
+  margin-top: 15px;
+  padding: 2px 0;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
   font-weight: 900;
   letter-spacing: -0.1px;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .person__text {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
