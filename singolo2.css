@@ -103,7 +103,7 @@ body {
 .layout_4_column {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 187px;
+  grid-template-rows: repeat(3, 187px);
   grid-gap: 20px;
 }
 
