@@ -76,7 +76,7 @@ body {
   list-style: none;
   
 }
-.navigation span {
+.navigation .dot {
   color: #555555;
   transform: translateY(-3px);
 }

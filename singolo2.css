@@ -43,8 +43,6 @@ body {
 }
 
 .portfolio {
-  position: relative;
-  height: 870px;
   padding-top: 60px;
   background-color: #2d303a;
 }
@@ -172,17 +170,12 @@ body {
 }
 
 .portfolio__bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 6px;
-  width: 100%;
+  margin-top: 66px;
   background-color: #323746;
 }
 
 .about {
-  position: relative;
-  height: 734px;
   padding-top: 67px;
   background-color: #f2f2f2;
 }
@@ -294,10 +287,7 @@ body {
 }
 
 .about__bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 6px;
-  width: 100%;
+  margin-top: 68px;
   background-color: #ffffff;
 }
