@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url(./assets/fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url(./assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url(./assets/fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  src: url(./assets/fonts/Lato-Black.ttf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.content {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.quote {
+  position: relative;
+  background-color: #f06c64;
+  padding-top: 68px;
+  padding-bottom: 22px;
+}
+
+.quote__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-weight: 900;
+  margin-bottom: 26px;
+}
+
+.quote__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-weight: 300;
+  margin-bottom: 26px;
+}
+
+.quote__text::first-line {
+  word-spacing: 1.1px;
+}
+
+.quote__contact {
+  padding-top: 18px;
+}
+
+.layout-21-column {
+  display: flex;
+}
+
+.contact-field {
+  margin-bottom: 16px;
+}
+
+.contact-field input, .contact-field textarea {
+  width: 619px;
+  padding: 7px 14px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-weight: 400;
+}
+
+.contact-field input {
+  height: 38px;
+}
+
+.contact-field textarea {
+  height: 202px;
+  resize: none;
+}
+
+.contact-button {
+  text-align: right;
+}
+.contact-button button {
+  width: 100px;
+  padding: 7px 14px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.contact-button button:hover {
+  background-color: #a7302a;
+}
+
+.contact__info {
+  padding-left: 20px;
+}
+
+.contact__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-weight: 900;
+}
+
+.contact__text {
+  margin-bottom: 20px;
+  text-align: justify;
+  word-spacing: -0.05px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-weight: 400;
+}
+
+.contact__points, .contact__points a:link, .contact__points a:visited {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact__points a:hover {
+  text-decoration: underline;
+}
+
+.icon-point {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  margin: 0 8px 0 0;
+  background-size: 100% 100%;
+}
+
+.icon__point-location {
+  background: url('./assets/images/contact/location.png') no-repeat center;
+}
+
+.icon__point-tel {
+  background: url('./assets/images/contact/phone.png') no-repeat center;
+}
+
+.icon__point-mail {
+  background: url('./assets/images/contact/mail.png') no-repeat center 2px;
+}
+
+.quote__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: #ea676b;
+}
+
+.footer {
+  height: 76px;
+  background-color: #2d303a;
+}
+
+.footer .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  padding-left: 2px;
+  letter-spacing: -0.2px;
+  color: #666d89;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer__media {
+  display: flex;
+}
+
+.footer-ico {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #666d89;
+  margin-left: 8px;
+}
+
+.footer__facebook {
+  background: url('./assets/images/media/facebook.png') no-repeat center;
+}
+
+.footer__google {
+  background: url('./assets/images/media/google.png') no-repeat center;
+}
+
+.footer__twitter {
+  background: url('./assets/images/media/twitter.png') no-repeat center;
+}
+
+.footer__in {
+  background: url('./assets/images/media/linkedin.png') no-repeat center;
+}
+
+.footer-ico:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px yellow; 
+}
