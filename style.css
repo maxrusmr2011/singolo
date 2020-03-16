@@ -77,12 +77,13 @@ body {
   padding: 4px 0 0 0;
   margin: 0;
   list-style: none;
-  
 }
+
 .navigation .dot {
   color: #555555;
   transform: translateY(-3px);
 }
+
 .navigation--item {
   display: inline-block;
 }
@@ -93,17 +94,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-
 }
+
 .navigation--link.link-active {
   color: #f06c64;
 }
+
 .navigation--link:hover {
   text-decoration: underline;
   color: yellow;
 }
-
-
 
 .header--bottom {
   height: 6px;
@@ -111,14 +111,52 @@ body {
 }
 
 .slider--body {
-  background-color: #f06c64;
+  
+  position: relative;
 }
 
+.slider--slides {
+  height: 594px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+  width: 1020px;
+  padding: 0 40px;
+}
+.slide-1 {
+  background-color: #f06c64;
+  
+}
+.slide-2 {
+  background-color: #648bf0;;
+}
+.hide {
+  display: none !important;
+}
 .slider--content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  /* height: 594px; */
+}
+.slider--controls {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 594px;
+}
+.slider--chev {
+  z-index: 2;
 }
 
 .slider--chev:hover {
@@ -126,16 +164,19 @@ body {
   transform: scale(1.5, 1.5);
 }
 
+
+
+
 .slider--phone {
   position: relative;
 }
 
 .phone-horizontal {
-  left: 5px;
+  left: -17.8px;
 }
 
 .phone-vertical {
-  right: 5px;
+  right: -17.8px;
 }
 
 .phone--base {
@@ -207,18 +248,54 @@ body {
   border-radius: 3px;
 }
 
-.phone-vertical .phone--screen {
+.slide-1 .phone-vertical .phone--screen {
   width: 194px;
   height: 338px;
   background: url(./assets/images/screen_vertical.png) -14px -135px;
   margin-top: 22px;
 }
 
+.slide-2 .phone-vertical .phone--screen {
+  width: 194px;
+  height: 338px;
+  background: url(./assets/images/phone-vertical-display.png);
+  background-size: 100%;
+  margin-top: 22px;
+}
+
+.slider--back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-phone {
+  width: 156px;
+  height: 314px;
+  background: url('./assets/images/slider-content.png') no-repeat;
+  background-size: 100% 100%;
+}
+.back1 {
+  margin-right: 226px;
+  position: relative;
+  left: 36px;
+}
+
+
 .phone-horizontal .phone--screen {
   height: 194px;
   width: 338px;
   background: url(./assets/images/screen_horizont.png) -125px -119px;
   margin-right: 22px;
+}
+
+.phone--screen.disable-screen {
+  background: #000000 !important;
 }
 
 .phone--home-btn {
@@ -229,6 +306,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .phone-vertical .phone--home-btn {
@@ -254,7 +332,6 @@ body {
 .services--body {
   padding-bottom: 30px;
   background-color: #f2f2f2;
-
 }
 
 .services--bottom {
@@ -606,7 +683,6 @@ body {
   background-color: #ffffff;
 }
 
-
 .quote {
   position: relative;
   background-color: #f06c64;
@@ -670,6 +746,7 @@ body {
 .contact-button {
   text-align: right;
 }
+
 .contact-button button {
   width: 100px;
   padding: 7px 14px;
@@ -799,6 +876,71 @@ body {
 }
 
 .footer-ico:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px yellow; 
+  cursor: pointer;
+  box-shadow: 0 0 10px yellow;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+}
+.active {
+  left: 0;
+}
+.animation {
+  transition: left 1s ease-out;
+}
+
+.active-left, .hide-right {
+  left: -100%;
+}
+
+.hide-left, .active-right {
+  left: 100%;
+}
+
+.image-bordered {
+  outline: 5px solid #F06C64 ;
+}
+
+.message-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messager {
+  width: 600px;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #aaaaaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  font-size: 26px;
+  line-height: 40px;
+  overflow: auto;
+}
+.messager-text {
+
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.messager-btn {
+  width: 100px;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 40px;
 }
