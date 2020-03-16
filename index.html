@@ -18,16 +18,17 @@
               <ul class="navigation">
                 <li class="navigation--item"><a href="#" class="navigation--link link-active">home</a></li>
                 <li class="dot">.</li>
-                <li class="navigation--item"><a href="#" class="navigation--link">services</a></li>
+                <li class="navigation--item"><a href="#services" class="navigation--link">services</a></li>
                 <li class="dot">.</li>
-                <li class="navigation--item"><a href="#" class="navigation--link">portfolio</a></li>
+                <li class="navigation--item"><a href="#portfolio" class="navigation--link">portfolio</a></li>
                 <li class="dot">.</li>
-                <li class="navigation--item"><a href="#" class="navigation--link">about</a></li>
+                <li class="navigation--item"><a href="#about" class="navigation--link">about</a></li>
                 <li class="dot">.</li>
-                <li class="navigation--item"><a href="#" class="navigation--link">contact</a></li>
+                <li class="navigation--item"><a href="#contact" class="navigation--link">contact</a></li>
               </ul>
             </nav>
           </div>
+
         </div>
 
         <div class="header--bottom"></div>
@@ -35,56 +36,82 @@
       <main>
         <div class="slider">
           <div class="slider--body">
-            <div class="wrapper">
-              <div class="slider--content">
-                <div class="slider--chev">
-                  <img src="./assets/images/chev_left.svg" alt="left">
-                </div>
-                <div class="slider--phone phone-vertical">
+            <div class="slider--controls">
+              <div class="slider--chev left">
+                <img src="./assets/images/chev_left.svg" alt="left">
+              </div>
+              <div class="slider--chev right">
+                <img src="./assets/images/chev_right.svg" alt="right">
+              </div>
+            </div>
+            <div class="slider--slides">
+              <div class="slide slide-1 active">
+                <div class="slider--content">
 
-                  <img src="./assets/images/shadow_vertical.png" alt="phv">
+                  <div class="slider--phone phone-vertical">
 
-                  <div class="phone--base">
-                    <div class="phone--cam">
-                      <div class="cam--red-dot"></div>
+                    <img src="./assets/images/shadow_vertical.png" alt="phv">
 
-                    </div>
-                    <div class="phone--speaker"></div>
-                    <div class="phone--screen">
-                      <div class="phone--image"></div>
-                    </div>
-                    <div class="phone--home-btn">
-                      <div class="home--square"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider--phone phone-horizontal">
+                    <div class="phone--base">
+                      <div class="phone--cam">
+                        <div class="cam--red-dot"></div>
 
-                  <img src="./assets/images/shadow_horizont.png" alt="phv">
-
-                  <div class="phone--base">
-                    <div class="phone--cam">
-                      <div class="cam--red-dot"></div>
-
-                    </div>
-                    <div class="phone--speaker"></div>
-                    <div class="phone--screen">
-                      <div class="phone--image"></div>
-                    </div>
-                    <div class="phone--home-btn">
-                      <div class="home--square"></div>
+                      </div>
+                      <div class="phone--speaker"></div>
+                      <div class="phone--screen"></div>
+                      <div class="phone--home-btn">
+                        <div class="home--square"></div>
+                      </div>
                     </div>
                   </div>
+                  <div class="slider--phone phone-horizontal">
+
+                    <img src="./assets/images/shadow_horizont.png" alt="phv">
+
+                    <div class="phone--base">
+                      <div class="phone--cam">
+                        <div class="cam--red-dot"></div>
+
+                      </div>
+                      <div class="phone--speaker"></div>
+                      <div class="phone--screen"></div>
+                      <div class="phone--home-btn">
+                        <div class="home--square"></div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="slider--chev">
-                  <img src="./assets/images/chev_right.svg" alt="right">
+              </div>
+              <div class="slide slide-2 hide">
+                <div class="slider--content">
+                  <div class="slider--back">
+                    <div class="back-phone back1"></div>
+                    <div class="back-phone back2"></div>
+                  </div>
+                  <div class="slider--phone phone-vertical">
+
+                    <img src="./assets/images/shadow_vertical.png" alt="phv">
+
+                    <div class="phone--base">
+                      <div class="phone--cam">
+                        <div class="cam--red-dot"></div>
+
+                      </div>
+                      <div class="phone--speaker"></div>
+                      <div class="phone--screen"></div>
+                      <div class="phone--home-btn">
+                        <div class="home--square"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="slider--bottom"></div>
         </div>
-        <div class="services">
+        <div class="services" id="services">
           <div class="services--body">
             <div class="wrapper">
               <section class="services--content">
@@ -153,7 +180,7 @@
           </div>
           <div class="services--bottom"></div>
         </div>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="wrapper">
             <h2 class="portfolio__title">Portfolio</h2>
             <p class="portfolio__text">Duis mollis, est non commodo luctus,
@@ -185,7 +212,7 @@
           </div>
           <div class="portfolio__bottom"></div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="wrapper">
             <h2 class="about__title">About Us</h2>
             <p class="about__text">Fusce dapibus, tellus ac cursus commodo, tortor
@@ -234,8 +261,8 @@
             </div>
           </div>
           <div class="about__bottom"></div>
-        </section>    
-        <section class="quote">
+        </section>
+        <section class="quote" id="contact">
           <div class="wrapper">
             <h2 class="quote__title">Get a Quote</h2>
             <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -245,7 +272,7 @@
             <div class="quote__contact">
               <div class="layout-21-column">
                 <div class="contact__form">
-                  <form action="#" method="POST">
+                  <form action="#" method="POST" name="sendform">
                     <div class="contact-field">
                       <input type="text" name="name" id="name" placeholder="Name (Required)" required>
                     </div>
@@ -253,7 +280,7 @@
                       <input type="email" name="email" id="email" placeholder="Email (Required)" required>
                     </div>
                     <div class="contact-field">
-                      <input type="text"  name="subject" id="subject" placeholder="Subject">
+                      <input type="text" name="subject" id="subject" placeholder="Subject">
                     </div>
                     <div class="contact-field">
                       <textarea name="describe" id="describe" cols="30" rows="10"
@@ -263,6 +290,12 @@
                       <button type="submit">Submit</button>
                     </div>
                   </form>
+                  <div class="message-window hide">
+                    <div class="messager">
+                      <div class="messager-text"></div>
+                      <button class="messager-btn">Ok</button>
+                    </div>
+                  </div>
                 </div>
                 <div class="contact__info">
                   <h3 class="contact__title">Contact Information
@@ -290,7 +323,7 @@
             </div>
           </div>
           <div class="quote__bottom"></div>
-        </section>    
+        </section>
       </main>
       <footer class="footer">
         <div class="wrapper">
@@ -302,8 +335,10 @@
             <div class="footer-ico footer__in"></div>
           </div>
         </div>
-      </footer>    
+      </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 
 </html>
