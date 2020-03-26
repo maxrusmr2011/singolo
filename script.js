@@ -2,6 +2,10 @@ document.querySelectorAll('.navigation--link').forEach(link => {
   link.addEventListener('click', linkView);
 });
 
+document.querySelector('.menu').addEventListener('click', (e) => {
+  e.currentTarget.parentNode.classList.toggle('menu-active');
+});
+
 document.querySelectorAll('.slider--chev').forEach(arrow => {
   arrow.addEventListener('click', handleArrow);
 });
