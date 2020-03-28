@@ -3,7 +3,11 @@ document.querySelectorAll('.navigation--link').forEach(link => {
 });
 
 document.querySelector('.menu').addEventListener('click', (e) => {
-  e.currentTarget.parentNode.classList.toggle('menu-active');
+  document.querySelector('.header').classList.toggle('menu-active');
+});
+
+document.querySelector('.background-menu').addEventListener('click', (e) => {
+  document.querySelector('.header').classList.remove('menu-active');
 });
 
 document.querySelectorAll('.slider--chev').forEach(arrow => {
